@@ -18,6 +18,7 @@ public class Ejercicio3 {
             String palabra = sc.next();
             while(!palabra.equals("fin")){
                 bw.write(palabra);
+                bw.newLine();
                 System.out.println("Introduce otra palabra");
                 palabra = sc.next();
             }
