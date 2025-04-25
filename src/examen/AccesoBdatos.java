@@ -12,7 +12,7 @@ public class AccesoBdatos {
 
     public AccesoBdatos(){
         try {
-            c = ConectarBD.getConexion("ClassicModels");
+            c = ConectarBD.getConexion("classicmodels");
         } catch (SQLException e) {
             System.out.println("Error al conectar a la base de datos: " + e.getMessage());
         }
@@ -28,7 +28,7 @@ public class AccesoBdatos {
             ps.setString(4, params[3].trim());
             ps.setString(5, params[4].trim());
             ps.setString(6, params[5].trim());
-            ps.setInt(7, Integer.parseInt(params[6]));
+            ps.setInt(7, Integer.parseInt(params[6].trim()));
             ps.setDouble(8, Double.parseDouble(params[7]));
             ps.setDouble(9, Double.parseDouble(params[8]));
 
